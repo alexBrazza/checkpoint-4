@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="jumbotron mt-5">
+    <div class="col-sm-8 mx-auto">
+      <h1 class="text-center">Profile</h1>
+    </div>
+    <table class="table col-md-6 mx-auto">
+      <tr>
+        <td>
+          First Name
+        </td>
+        <td>
+          {{details?.firstname}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Last Name
+        </td>
+        <td>
+          {{details?.lastname}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Email
+        </td>
+        <td>
+          {{details?.email}}
+        </td>
+      </tr>
+    </table>
+    <button routerLink="/admin/dashboard" class="btn btn-lg btn-success  btn-block" type=""> My Dashboard </button>
+
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.body{
+  margin: 0;
+  padding: 0;
+}
+
+.circusFond{
+  height: 80vh;
+  width: 2000px;
+  background-color: rgba(213,105, 131, 0.3);
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+
+}
+.circus {
+  height: 80vh;
+  width: 100%;
+  background-image: url(../../../assets/circus.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+}
+
+h1{
+  vertical-align: middle;
+  display: table-cell;
+  font-family: 'Mountains of Christmas';
+  color: whitesmoke;
+
+}
+.annonce{
+margin-top: 20px;
+}
+
+.imageSize{
+  height: 50%;
+}
