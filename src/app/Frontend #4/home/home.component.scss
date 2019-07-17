@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.circusFond{
+.fond{
   height: 80vh;
   width: 2000px;
   background-color: rgba(213,105, 131, 0.3);
@@ -28,7 +28,10 @@ h1{
   display: table-cell;
   font-family: 'Mountains of Christmas';
   color: whitesmoke;
-
+  text-align: center;
+  font-size:80px;
+  font-weight: bold;
+  letter-spacing: .3rem;
 }
 .annonce{
 margin-top: 20px;

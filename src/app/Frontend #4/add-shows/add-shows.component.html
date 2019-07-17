@@ -1,16 +1,16 @@
-<form>
+<form [formGroup]="spectacleForm" (ngSubmit)="onSaveShows">
     <div class="form-group">
       <label for="exampleFormControlInput1">Name</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+      <input type="text" class="form-control" id="name" placeholder="Name">
     </div>
     <div class="form-group">
         <label for="exampleFormControlInput1">Price</label>
-        <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="Price">
+        <input type="number" class="form-control" id="Price" placeholder="Price">
     </div>
     <div class="form-group">
         <label for="exampleFormControlInput1">Artist</label>
-        <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Artist">
+        <input type="text" class="form-control" id="Artist" placeholder="artist">
       </div>
 
-      <button class="btn btn-primary"type="submit">Save</button>
+      <button class="btn btn-primary" type="submit">Save</button>
   </form>
