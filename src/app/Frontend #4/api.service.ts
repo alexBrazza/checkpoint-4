@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Show } from '../show';
+import { Artist } from '../artist';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -22,5 +23,8 @@ export class ApiService {
 
   public getShow(): Observable<Show[]> {
     return this.httpClient.get<Show[]>(`${this.apiURL}/spectacle`);
+  }
+  public getArtist(): Observable<Artist[]> {
+    return this.httpClient.get<Artist[]>(`${this.apiURL}/artists`);
   }
 }

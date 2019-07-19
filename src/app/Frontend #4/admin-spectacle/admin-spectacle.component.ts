@@ -12,5 +12,4 @@ export class AdminSpectacleComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

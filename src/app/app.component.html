@@ -1,32 +1,24 @@
-<nav class="navbar navbar-expand-lg rounded">
-
-
-  <div class="collapse navbar-collapse " id="navbarexample">
-      <a class="navbar-brand"  id="logoLeft" href="#">
-          <img src="../assets/logo.png" width="50" height="50" alt="">
-        </a>
-    <ul class="navbar-nav col-sm-3">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/"> Home </a>
-      </li>
-      <li class="nav-item col-sm-3" *ngIf="!auth.isLoggedIn()">
-        <a class="nav-link" routerLink="/login"> Login </a>
-      </li>
-      <li class="nav-item col-sm-3" *ngIf="!auth.isLoggedIn()">
-        <a class="nav-link" routerLink="/register"> Register </a>
-      </li>
-      <li *ngIf="auth.isLoggedIn()" class="nav-item col-sm-3" >
-        <a class="nav-link" routerLink="/profile"> {{auth.getUserDetails()?.firstname}} </a>
-      </li>
-      <li class="nav-item col-sm-3" *ngIf="auth.isLoggedIn()">
-        <a class="nav-link" (click)="auth.logOut()" routerLink=""> Logout </a>
-      </li>
-      <li class="nav-item col-sm-3" *ngIf="auth.isLoggedIn()">
-          <a class="nav-link" (click)="auth.logOut()" routerLink="/admin/dashboard"> Dashboard </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-
+<ul class="nav justify-content-center">
+    <a class="navbar-brand"  href="#">
+        <img src="../assets/logo.png" width="50" height="50" alt="">
+      </a>
+  <li class="nav-item">
+    <a class="nav-link active" routerLink="/">Home</a>
+  </li>
+  <li class="nav-item" *ngIf="!auth.isLoggedIn()">
+    <a class="nav-link" routerLink="/login">Login</a>
+  </li>
+  <li class="nav-item" *ngIf="!auth.isLoggedIn()">
+    <a class="nav-link" routerLink="/register">Register</a>
+  </li>
+  <li class="nav-item" *ngIf="auth.isLoggedIn()">
+      <a class="nav-link" routerLink="/profile">{{auth.getUserDetails()?.firstname}}</a>
+    </li>
+  <li class="nav-item" *ngIf="auth.isLoggedIn()">
+      <a class="nav-link" (click)="auth.logOut()" routerLink="">Logout</a>
+  </li>
+  <li class="nav-item" *ngIf="auth.isLoggedIn()">
+      <a class="nav-link" routerLink="/admin/dashboard">Dashboard</a>
+  </li>
+</ul>
 <router-outlet></router-outlet>

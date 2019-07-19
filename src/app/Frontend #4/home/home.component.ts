@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import { ApiService } from '../api.service';
 })
 export class HomeComponent implements OnInit {
   shows = [];
-
+  artists = [];
   constructor(private  apiService: ApiService) { }
 
   ngOnInit() {
@@ -17,7 +18,11 @@ export class HomeComponent implements OnInit {
         this.shows = res;
       }
     );
-    console.log()
+    this.apiService.getArtist().subscribe(
+      (res)  => {
+        this.artists = res;
+      }
+    );
   }
 
 }

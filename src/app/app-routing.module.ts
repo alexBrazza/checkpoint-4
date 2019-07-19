@@ -8,7 +8,6 @@ import { AuthGuardService } from './Frontend #4/auth-guard.service';
 import { AdminDashboardComponent } from './Frontend #4/admin-dashboard/admin-dashboard.component';
 import { AddShowsComponent } from './Frontend #4/add-shows/add-shows.component';
 
-
 const routes: Routes = [
   {
     path: '', component: HomeComponent

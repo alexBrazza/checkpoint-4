@@ -1,18 +1,24 @@
+
 <div class="container-fluid body">
   <div class="fond circus">
     <h1> W.Circus </h1>
   </div>
-
+<hr>
 </div>
 <div class="container-fluid annonce">
   <div class="row">
 
-    <div class="card col-md-4" style="width: 18rem;" *ngFor="let show of shows">
+    <div class="card col-md-4" style="width: 18rem;" *ngFor="let artist of artists">
+      <img src="../../../assets/{{artist.img}}" class="card-img-top imageSize" alt="...">
       <div class="card-body">
-        <h5 class="card-title">{{show.Name}}</h5>
-        <p class="card-text">{{show.Price}}€ <br> {{show.artist}}</p>
+        <h5 class="card-title">{{artist.Name}} Spécialiste de : </h5>
+        <p class="card-text">{{artist.Specialite}}</p>
+        <a href="#" class="btn btn-primary">See The Show</a>
       </div>
     </div>
 
   </div>
+  <hr class="perso">
+
+  <app-map></app-map>
 </div>

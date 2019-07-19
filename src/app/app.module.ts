@@ -14,6 +14,9 @@ import { SliderComponent } from './Frontend #4/slider/slider.component';
 import { AdminDashboardComponent } from './Frontend #4/admin-dashboard/admin-dashboard.component';
 import { AdminSpectacleComponent } from './Frontend #4/admin-spectacle/admin-spectacle.component';
 import { AddShowsComponent } from './Frontend #4/add-shows/add-shows.component';
+import { MapComponent } from './Frontend #4/map/map.component';
+import { AgmCoreModule } from '@agm/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -27,7 +30,8 @@ import { AddShowsComponent } from './Frontend #4/add-shows/add-shows.component';
     SliderComponent,
     AdminDashboardComponent,
     AdminSpectacleComponent,
-    AddShowsComponent
+    AddShowsComponent,
+    MapComponent
 
   ],
   imports: [
@@ -35,7 +39,12 @@ import { AddShowsComponent } from './Frontend #4/add-shows/add-shows.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyD7HncxityOh8mcNfelozLgLjMatG3dvu0'
+    }),
+    NgbModule
+
   ],
   providers: [AuthenticationService, AuthGuardService],
   bootstrap: [AppComponent],
