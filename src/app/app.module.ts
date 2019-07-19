@@ -41,7 +41,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     ReactiveFormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyD7HncxityOh8mcNfelozLgLjMatG3dvu0'
+      apiKey: ''
     }),
     NgbModule
 
